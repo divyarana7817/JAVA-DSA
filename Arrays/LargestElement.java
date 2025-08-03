@@ -1,11 +1,13 @@
+import java.util.Arrays;
 
-package Arrays;
-import java.util.Arrays; //  This line is required
-
-class Solution {
-    public int largestElement(int[] nums) {
-        int n = nums.length;
-        Arrays.sort(nums);
-        return nums[n - 1];
+public class LargestElement {
+    public static int findLargest(int[] nums) {
+        int max = nums[0];
+        for (int num : nums) {
+            if (num > max) {
+                max = num;
+            }
+        }
+        return max;
     }
 }
