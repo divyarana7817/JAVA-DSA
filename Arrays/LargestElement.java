@@ -1,5 +1,4 @@
 package Arrays;
-import java.util.Arrays;
 
 public class LargestElement {
     public static int findLargest(int[] nums) {
